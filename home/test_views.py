@@ -85,6 +85,6 @@ class TestHome(TestCase):
 
 
     def test_post_toggle_item_that_does_not_exist(self):
-        url = "/toggle/99")
+        url = "/toggle/99"
         resp = self.client.post(url)
         self.assertEqual(resp.status_code, 404)
